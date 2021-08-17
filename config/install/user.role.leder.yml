@@ -59,6 +59,7 @@ permissions:
 - 'edit webform submissions own node'
 - 'edit webform twig'
 - 'entity print access bundle contact'
+- 'entity print access bundle forloebsside'
 - 'entity print access bundle template_contact'
 - 'entity print access bundle template_employee_evaluation'
 - 'entity print access bundle template_feedback'
