@@ -85,6 +85,7 @@ permissions:
 - 'entity print access type taxonomy_term'
 - 'entity print access type user'
 - 'entity print access type webform_submission'
+- 'manage own workflow participants'
 - 'import configuration'
 - 'revert forloebsside revisions'
 - 'search content'
