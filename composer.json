@@ -16,6 +16,8 @@
         }
     },
     "require": {
-        "drupal/core": "^8"
+        "drupal/core": "^8",
+        "drupal/memcache": "^2.3",
+        "os2forms/os2forms_forloeb": "^1.0"
     }
 }
