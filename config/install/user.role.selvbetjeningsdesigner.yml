@@ -1,8 +1,8 @@
 langcode: da
 status: true
 dependencies: {  }
-id: forloeb_designer
-label: 'Forløb designer'
+id: selvbetjeningsdesigner
+label: 'Selvbetjeningsdesigner'
 weight: 5
 is_admin: null
 permissions:
