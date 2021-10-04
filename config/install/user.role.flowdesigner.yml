@@ -1,8 +1,8 @@
 langcode: da
 status: true
 dependencies: {  }
-id: flow_designer
-label: 'Flow designer'
+id: flowdesigner
+label: 'Flowdesigner'
 weight: 4
 is_admin: null
 permissions:
