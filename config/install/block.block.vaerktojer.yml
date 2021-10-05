@@ -31,7 +31,7 @@ visibility:
   user_role:
     id: user_role
     roles:
-      flow_designer: flow_designer
+      flow_designer: flowdesigner
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
