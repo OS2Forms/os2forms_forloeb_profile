@@ -16,7 +16,7 @@
         }
     },
     "require": {
-        "drupal/bootstrap": "^3.23",
+        "drupal/gin": "^3.0",
         "drupal/core": "^8",
         "os2forms/os2forms": "^2.6",
         "os2forms/os2forms_forloeb": "^1.3",

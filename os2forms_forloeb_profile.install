@@ -23,6 +23,24 @@ function os2forms_forloeb_profile_install() {
   // We install some menu links, so we have to rebuild the router, to ensure the
   // menu links are valid.
   \Drupal::service('router.builder')->rebuildIfNeeded();
+
+  // set Gin as default theme
+  $theme_list = [
+    'claro',
+    'gin'
+  ];
+
+  // Install themes
+  \Drupal::service('theme_installer')->install($theme_list);
+
+  // Get theme manager
+  $system_theme = \Drupal::configFactory()->getEditable('system.theme');
+
+  // Set default and admin themes
+  $system_theme
+    ->set('default', 'gin')
+    ->set('admin', 'gin')
+    ->save();
 }
 
 /**
