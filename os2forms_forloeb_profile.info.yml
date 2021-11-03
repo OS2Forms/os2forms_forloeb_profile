@@ -87,7 +87,6 @@ install:
   - webform_entity_print
   - webform_entity_print_attachment
   - webform_migrate
-  - webform_permissions_by_term
   - webform_remote_handlers
   - webform_rest
   - webform_scheduled_email
