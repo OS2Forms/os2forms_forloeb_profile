@@ -108,9 +108,6 @@ install:
   - maestro_webform
   - masquerade
   - os2web_simplesaml
-  - rules
-  - rules_token
-  - rules_webform
   - switch_page_theme
   - ultimate_cron
 
