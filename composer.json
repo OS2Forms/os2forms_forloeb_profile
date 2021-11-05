@@ -19,7 +19,7 @@
         "drupal/gin": "^3.0",
         "drupal/core": "^8",
         "os2forms/os2forms": "^2.6",
-        "os2forms/os2forms_forloeb": "dev-remove_rules_modules_from_forloeb",
+        "os2forms/os2forms_forloeb": "^1.7",
         "os2web/os2web_simplesaml": "8.x-dev"
     }
 }
