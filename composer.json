@@ -21,5 +21,20 @@
         "os2forms/os2forms": "^2.6",
         "os2forms/os2forms_forloeb": "^1.3",
         "os2web/os2web_simplesaml": "8.x-dev"
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "test": "-p2"
+        },
+        "enable-patching": true,
+        "patcher": {
+            "force-reset": true
+        },
+        "patches": {
+            "drupal/dynamic_entity_reference": {
+                "entityQuery reference JOINs should specify target_type": "https://www.drupal.org/files/issues/2021-06-22/entityquery-reference-joins-should-specify-target_type-3120952-24.patch"
+            }
+        }
     }
 }
