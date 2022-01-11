@@ -19,7 +19,7 @@
         "drupal/gin": "^3.0",
         "drupal/core": "^8 || ^9",
         "os2forms/os2forms": "^3.0",
-        "os2forms/os2forms_forloeb": "^1.9",
+        "os2forms/os2forms_forloeb": "2.0.0-rc",
         "os2web/os2web_simplesaml": "8.x-dev"
     },
     "extra": {
