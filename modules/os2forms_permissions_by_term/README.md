@@ -20,3 +20,6 @@ Alternative change your site configuration on admin/permissions-by-term/settings
 - The Permissions by Term module adds a form element to the user form.
 - When a user visits an entity of the above mentioned this module checks for match between the entity and the users
   affiliation. If no match is found access is denied.
+- The first taxonomy term in the user_affiliation taxonomy should be "Anonymous" with Taxonomy term permissions allowed
+  for "Anonymous users"-role. This allows editors to make nodes accessible to anonymous users while removing it in backend
+  from views and dropdowns.
