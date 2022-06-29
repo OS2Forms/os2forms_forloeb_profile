@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Install, update and uninstall functions for the os2forms_forloeb_profile installation profile.
+ * Install, update and uninstall functions for the os2forms_forloeb_profile.
  */
 
 use Drupal\user\Entity\User;
@@ -24,19 +24,19 @@ function os2forms_forloeb_profile_install() {
   // menu links are valid.
   \Drupal::service('router.builder')->rebuildIfNeeded();
 
-  // set Gin as default theme
+  // Set Gin as default theme.
   $theme_list = [
     'claro',
-    'gin'
+    'gin',
   ];
 
-  // Install themes
+  // Install themes.
   \Drupal::service('theme_installer')->install($theme_list);
 
-  // Get theme manager
+  // Get theme manager.
   $system_theme = \Drupal::configFactory()->getEditable('system.theme');
 
-  // Set default and admin themes
+  // Set default and admin themes.
   $system_theme
     ->set('default', 'gin')
     ->set('admin', 'gin')
@@ -46,14 +46,14 @@ function os2forms_forloeb_profile_install() {
 /**
  * Implements hook_install_tasks().
  *
- * Enabled
+ * Enabled.
  */
 function os2forms_forloeb_profile_install_tasks(&$install_state) {
   $tasks = [
     'os2forms_forloeb_profile_install_simplesaml_roles' => [
       'display_name' => t('Set up SimpleSAML roles mapping'),
       'type' => 'normal',
-    ]
+    ],
   ];
 
   return $tasks;
