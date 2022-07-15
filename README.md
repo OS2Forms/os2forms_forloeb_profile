@@ -2,10 +2,6 @@
 
 This is a Drupal 9 installation profile for OS2forms project.
 
-## Usage
-!note It's not supposed to use this profile outside https://github.com/os2forms/os2forms8 project.
-
-
 ### Create a new drupal project
 ```
 composer create-project drupal/recommended-project os2forms
