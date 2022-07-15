@@ -7,32 +7,6 @@ This is a Drupal 9 installation profile for OS2forms project.
 composer create-project drupal/recommended-project os2forms
 ```
 
-
-### Add a new repository for webform embed module to your projects composer.json
-
-(Remove the dots)
-```
-"repositories": [
-...
-        {
-            "//": "https://git.drupalcode.org/issue/webform_embed-3149360/-/tree/3149360-automated-drupal-9",
-            "type": "package",
-            "package": {
-                "name": "drupal/webform_embed",
-                "//": "@see https://github.com/OS2Forms/os2forms/blob/master/composer.json#L27",
-                "version": "1.x-dev",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://git.drupalcode.org/issue/webform_embed-3149360.git",
-                    "type": "git",
-                    "reference": "3149360-automated-drupal-9"
-                }
-            }
-        },
-...
-    ],
-```
-
 ### Require this Drupal install profile.
 ```
 composer require os2forms/os2forms_forloeb_profile
