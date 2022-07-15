@@ -422,7 +422,9 @@ class Helper {
         }
       }
       else {
-        $this->filterWebformSelectOptions($option, $result, $key);
+        if (is_array($option)) {
+          $this->filterWebformSelectOptions($option, $result, $key);
+        }
       }
     }
   }
