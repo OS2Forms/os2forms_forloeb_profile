@@ -132,7 +132,7 @@ class MaestroTemplateHelper {
     $form['maestro_template_permissions_by_term'] = [
       '#type' => 'details',
       '#open' => TRUE,
-      '#title' => 'Meastro template access',
+      '#title' => $this->t('Meastro template access'),
       '#tree' => TRUE,
       '#weight' => -99,
     ];
