@@ -32,17 +32,17 @@ class CustomWebformEntityListBuilder extends WebformEntityListBuilder {
 
     // Setup a required condition for the list builder to respect webform update
     // access.
-    $webform_ids_permissions_by_term = [];
+    $allowedForms = [];
     /** @var \Drupal\webform\WebformInterface[] $webforms */
     $webforms = $this->getStorage()->loadMultiple();
     foreach ($webforms as $webform) {
       $access = $webform->access('update');
       if ($access) {
-        $webform_ids_permissions_by_term[] = $webform->id();
+        $allowedForms[] = $webform->id();
       }
     }
 
-    $query->condition('id', $webform_ids_permissions_by_term, 'IN');
+    $query->condition('id', $allowedForms, 'IN');
 
     return $query;
   }
