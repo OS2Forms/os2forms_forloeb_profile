@@ -1,6 +1,6 @@
-# OS2forms med Forløb installation profile for Drupal 9
+# OS2forms med Forløb installation profile for Drupal 8
 
-This is a Drupal 9 installation profile for OS2forms project.
+This is a Drupal 8 installation profile for OS2forms project.
 
 ### Create a new drupal project
 ```
@@ -61,3 +61,6 @@ composer require drush/drush
 ```
 vendor/bin/drush -y site-install os2forms_forloeb_profile
 ```
+
+## Usage
+It's not supposed to use this profile outside https://github.com/os2forms/os2forms8 project.
