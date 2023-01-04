@@ -26,8 +26,8 @@
     "require": {
         "drupal/gin": "^3.0-rc",
         "drupal/core": "^8 || ^9",
-        "itk-dev/os2forms": "dev-composer_cleanup",
-        "itk-dev/os2forms_forloeb": "dev-composer_cleanup",
+        "os2forms/os2forms": "dev-composer_cleanup",
+        "os2forms/os2forms_forloeb": "dev-composer_cleanup",
         "os2web/os2web_simplesaml": "8.x-dev"
     },
     "require-dev": {
