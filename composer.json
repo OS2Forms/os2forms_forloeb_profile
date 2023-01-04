@@ -5,21 +5,29 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "license": "EUPL-1.2",
-    "repositories": {
-        "drupal": {
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "assets": {
+        {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/itk-dev/os2forms"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/itk-dev/os2forms_forloeb"
         }
-    },
+    ],
     "require": {
         "drupal/gin": "^3.0-rc",
         "drupal/core": "^8 || ^9",
-        "os2forms/os2forms": "^3.1",
-        "os2forms/os2forms_forloeb": "^2.0.0-rc",
+        "itk-dev/os2forms": "dev-composer_cleanup",
+        "itk-dev/os2forms_forloeb": "dev-composer_cleanup",
         "os2web/os2web_simplesaml": "8.x-dev"
     },
     "require-dev": {
