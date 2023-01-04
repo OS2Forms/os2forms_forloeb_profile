@@ -18,8 +18,8 @@
     "require": {
         "drupal/gin": "^3.0-rc",
         "drupal/core": "^8 || ^9",
-        "os2forms/os2forms": "^3.4.0-dev",
-        "os2forms/os2forms_forloeb": "^2.6.0-dev",
+        "os2forms/os2forms": "^3.4",
+        "os2forms/os2forms_forloeb": "^2.6",
         "os2web/os2web_simplesaml": "8.x-dev"
     },
     "require-dev": {

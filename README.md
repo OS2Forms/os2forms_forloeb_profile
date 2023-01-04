@@ -9,7 +9,7 @@ composer create-project drupal/recommended-project:^9.0 os2forms
 
 ### Require this Drupal install profile.
 ```
-composer require os2forms/os2forms_forloeb_profile
+composer require os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" -W
 ```
 
 ### Setup your local settings file
