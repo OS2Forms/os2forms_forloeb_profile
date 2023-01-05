@@ -2,14 +2,45 @@
 
 This is a Drupal 8 installation profile for OS2forms project.
 
-### Create a new drupal project
+## Create a new drupal 9 project
 ```
 composer create-project drupal/recommended-project:^9.0 os2forms
 ```
 
-### Require this Drupal install profile.
+### !!!NOTE Temporary installation of install profile
+@todo Update this after release of composer cleanup.
+
+1) Add our development sources to repositories list.
 ```
-composer require os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" -W
+"repositories": [
+...
+    {
+        "type": "vcs",
+        "url": "https://github.com/itk-dev/os2forms_forloeb_profile"
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/itk-dev/os2forms_forloeb"
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/itk-dev/os2forms"
+    }
+],
+```
+
+2) Use aliases to build project on our development sources.
+```
+"require": {
+...
+    "os2forms/os2forms": "dev-composer_cleanup as 3.3.0",
+    "os2forms/os2forms_forloeb": "dev-composer_cleanup as 2.5.0",
+},
+```
+
+3) Require the development version of os2forms_forloeb_profile.
+```
+composer require os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" --with-all-dependencies
 ```
 
 ### Setup your local settings file
