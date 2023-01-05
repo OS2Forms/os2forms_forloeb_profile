@@ -1,6 +1,6 @@
-# OS2forms med Forløb installation profile for Drupal 8
+# OS2forms med Forløb installation profile for Drupal 9
 
-This is a Drupal 8 installation profile for OS2forms project.
+This is a Drupal 9 installation profile for OS2forms project.
 
 ## Create a new drupal 9 project
 ```
