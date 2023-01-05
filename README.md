@@ -2,13 +2,16 @@
 
 This is a Drupal 9 installation profile for OS2forms project.
 
-## Create a new drupal 9 project
+## Create a new drupal 9 project with dev stability to allow all required packages to be installed.
 ```
-composer create-project drupal/recommended-project:^9.0 os2forms
+composer create-project --stability=dev drupal/recommended-project:^9.0 os2forms
 ```
 
 ### !!!NOTE Temporary installation of install profile
 @todo Update this after release of composer cleanup.
+  - Remove added repositories
+  - Remove aliases
+  - Update require command.
 
 1) Add our development sources to repositories list.
 ```
@@ -40,7 +43,7 @@ composer create-project drupal/recommended-project:^9.0 os2forms
 
 3) Require the development version of os2forms_forloeb_profile.
 ```
-composer require os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" --with-all-dependencies
+yes | composer require os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" --with-all-dependencies
 ```
 
 ### Setup your local settings file
