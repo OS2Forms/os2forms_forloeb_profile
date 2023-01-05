@@ -8,10 +8,15 @@ composer create-project --stability=dev drupal/recommended-project:^9.0 os2forms
 ```
 
 ### !!!NOTE Temporary installation of install profile
-@todo Update this after release of composer cleanup.
-  - Remove added repositories
-  - Remove aliases
-  - Update require command.
+
+--
+
+@todo Update this section after release of composer cleanup.
+- Remove added repositories
+- Remove aliases
+- Update require command.
+
+--
 
 1) Add our development sources to repositories list.
 ```
@@ -46,14 +51,10 @@ composer create-project --stability=dev drupal/recommended-project:^9.0 os2forms
 yes | composer require os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" --with-all-dependencies
 ```
 
-
-
-
-
-### Setup your local settings file
-
-web/sites/default/settings.local.php
-```
+### Set up your local settings file
+Create file: web/sites/default/settings.local.php
+```php
+<?php
 /**
  * Database connection.
  */
@@ -90,15 +91,7 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 }
 ```
 
-### Require drush for your project
-```
-composer require drush/drush
-```
-
 ### Install site with this installation profile
 ```
 vendor/bin/drush -y site-install os2forms_forloeb_profile
 ```
-
-## Usage
-It's not supposed to use this profile outside https://github.com/os2forms/os2forms8 project.
