@@ -46,6 +46,10 @@ composer create-project --stability=dev drupal/recommended-project:^9.0 os2forms
 yes | composer require os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" --with-all-dependencies
 ```
 
+
+
+
+
 ### Setup your local settings file
 
 web/sites/default/settings.local.php

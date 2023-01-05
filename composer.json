@@ -16,6 +16,7 @@
         }
     ],
     "require": {
+        "cweagans/composer-patches": "^1.6.5",
         "drupal/gin": "^3.0-rc",
         "drupal/core": "^8 || ^9",
         "os2forms/os2forms": "^3.3",
@@ -28,18 +29,8 @@
     },
     "extra": {
         "composer-exit-on-patch-failure": true,
-        "patchLevel": {
-            "test": "-p2"
-        },
         "enable-patching": true,
-        "patcher": {
-            "force-reset": true
-        },
-        "patches": {
-            "drupal/dynamic_entity_reference": {
-                "entityQuery reference JOINs should specify target_type (https://www.drupal.org/project/dynamic_entity_reference/issues/3120952#comment-14141038)": "https://www.drupal.org/files/issues/2021-06-22/entityquery-reference-joins-should-specify-target_type-3120952-24.patch"
-            }
-        }
+        "patches": {}
     },
     "scripts": {
         "coding-standards-check/phpcs": [
