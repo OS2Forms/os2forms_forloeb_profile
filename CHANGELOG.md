@@ -8,6 +8,17 @@ See ["how do I make a good changelog record?"](https://keepachangelog.com/en/1.0
 before starting to add changes.
 
 ## [Unreleased]
+- Added github action for checking changelog changes when creating pull requests
+- Updated readme
+- Removed webform_embed from repositories
+- Removed array keys from repositories list
+- Updated drupal core dependency
+- Updated gin dependency
+- Updated os2forms dependency
+- Updated os2forms_forloeb dependency
+- Added cweagans/composer-patches as dependency
+- Removed drupal/dynamic_entity_reference (It belongs in os2forms/os2forms_forloeb)
+- Changed composer patching configuration
 
 ### Added
 - Github CI action for checking Drupal Coding standards with PHP Code Sniffer
