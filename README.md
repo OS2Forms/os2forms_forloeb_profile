@@ -37,16 +37,14 @@ composer create-project --stability=dev drupal/recommended-project:^9.0 os2forms
 ],
 ```
 
-2) Use aliases to build project on our development sources.
+2) Add allowed plugins
 ```
-"require": {
-...
-    "os2forms/os2forms": "dev-composer_cleanup as 3.3.0",
-    "os2forms/os2forms_forloeb": "dev-composer_cleanup as 2.5.0",
-},
+composer config --no-plugins allow-plugins.zaporylie/composer-drupal-optimizations true
+composer config --no-plugins allow-plugins.cweagans/composer-patches true
+composer config --no-plugins allow-plugins.simplesamlphp/composer-module-installer true
 ```
 
-3) Require the development version of os2forms_forloeb_profile.
+3) Require the development version of os2forms_forloeb_profile and aliases of os2forms/os2forms_forloeb and os2forms/os2forms.
 ```
 yes | composer require "os2forms/os2forms:dev-composer_cleanup as 3.3.0" "os2forms/os2forms_forloeb:dev-composer_cleanup as 2.5.0" os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" --with-all-dependencies
 ```
