@@ -4,7 +4,7 @@ This is a Drupal 9 installation profile for OS2forms project.
 
 ## Create a new drupal 9 project with dev stability to allow all required packages to be installed.
 ```
-composer create-project --stability=dev drupal/recommended-project:^9.0 os2forms
+composer create-project drupal/recommended-project:^9.0 os2forms
 ```
 
 ### !!!NOTE Temporary installation of install profile
@@ -15,6 +15,7 @@ composer create-project --stability=dev drupal/recommended-project:^9.0 os2forms
 - Remove added repositories
 - Remove aliases
 - Update require command.
+- Remove "composer config minimum-stability dev"
 
 --
 
@@ -37,16 +38,17 @@ composer create-project --stability=dev drupal/recommended-project:^9.0 os2forms
 ],
 ```
 
-2) Add allowed plugins
+2) Change composer config
 ```
 composer config --no-plugins allow-plugins.zaporylie/composer-drupal-optimizations true
 composer config --no-plugins allow-plugins.cweagans/composer-patches true
 composer config --no-plugins allow-plugins.simplesamlphp/composer-module-installer true
+composer config minimum-stability dev
 ```
 
 3) Require the development version of os2forms_forloeb_profile and aliases of os2forms/os2forms_forloeb and os2forms/os2forms.
 ```
-yes | composer require "os2forms/os2forms:dev-composer_cleanup as 3.3.0" "os2forms/os2forms_forloeb:dev-composer_cleanup as 2.5.0" os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" --with-all-dependencies
+composer require "os2forms/os2forms:dev-composer_cleanup as 3.3.0" "os2forms/os2forms_forloeb:dev-composer_cleanup as 2.5.0" os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" --with-all-dependencies
 ```
 
 ### Install the os2forms_forloeb_profile
