@@ -48,7 +48,7 @@ composer create-project --stability=dev drupal/recommended-project:^9.0 os2forms
 
 3) Require the development version of os2forms_forloeb_profile.
 ```
-yes | composer require os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" --with-all-dependencies
+yes | composer require "os2forms/os2forms:dev-composer_cleanup as 3.3.0" "os2forms/os2forms_forloeb:dev-composer_cleanup as 2.5.0" os2forms/os2forms_forloeb_profile:"dev-composer_cleanup" --with-all-dependencies
 ```
 
 ### Install the os2forms_forloeb_profile
