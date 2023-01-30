@@ -5,34 +5,23 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "license": "EUPL-1.2",
-    "repositories": {
-        "webform_embed": {
-            "type": "package",
-            "package": {
-                "name": "drupal/webform_embed",
-                "type": "drupal-module",
-                "version": "1.x-dev",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://ftp.drupal.org/files/projects/webform_embed-8.x-1.x-dev.zip",
-                    "shasum": ""
-                }
-            }
-        },
-        "drupal": {
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "assets": {
+        {
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    },
+    ],
     "require": {
-        "drupal/gin": "^3.0",
-        "drupal/core": "^8 || ^9",
-        "os2forms/os2forms": "^3.1",
-        "os2forms/os2forms_forloeb": "^2.0.0-rc",
+        "cweagans/composer-patches": "^1.6.5",
+        "drupal/gin": "^3.0-rc",
+        "drupal/core": "^9",
+        "drush/drush": "^11.4",
+        "os2forms/os2forms": "^3.3",
+        "os2forms/os2forms_forloeb": "^2.5",
         "os2web/os2web_simplesaml": "8.x-dev"
     },
     "require-dev": {
@@ -41,18 +30,8 @@
     },
     "extra": {
         "composer-exit-on-patch-failure": true,
-        "patchLevel": {
-            "test": "-p2"
-        },
         "enable-patching": true,
-        "patcher": {
-            "force-reset": true
-        },
-        "patches": {
-            "drupal/dynamic_entity_reference": {
-                "entityQuery reference JOINs should specify target_type (https://www.drupal.org/project/dynamic_entity_reference/issues/3120952#comment-14141038)": "https://www.drupal.org/files/issues/2021-06-22/entityquery-reference-joins-should-specify-target_type-3120952-24.patch"
-            }
-        }
+        "patches": {}
     },
     "scripts": {
         "coding-standards-check/phpcs": [
@@ -69,6 +48,12 @@
         ]
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "simplesamlphp/composer-module-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true,
+            "zaporylie/composer-drupal-optimizations": true
+        }
     }
 }
