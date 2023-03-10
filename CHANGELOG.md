@@ -9,13 +9,26 @@ before starting to add changes.
 
 ## [Unreleased]
 
-## 1.10.0
+## [1.11.0] - 10.03.2023
+- Added github action for checking changelog changes when creating pull requests
+- Updated readme
+- Removed webform_embed from repositories
+- Removed array keys from repositories list
+- Updated drupal core dependency
+- Updated gin dependency
+- Updated os2forms dependency
+- Updated os2forms_forloeb dependency
+- Added cweagans/composer-patches as dependency
+- Removed drupal/dynamic_entity_reference (It belongs in os2forms/os2forms_forloeb)
+- Changed composer patching configuration
+
+## [1.10.0]
 
 ### Added 
  - Feature/user permissions
  - Feature/user management
 
-## 1.9.0
+## [1.9.0]
 
 ### Added
 - Github CI action for checking Drupal Coding standards with PHP Code Sniffer
