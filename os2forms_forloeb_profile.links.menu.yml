@@ -1,0 +1,120 @@
+# Opgaver
+system.admin.os2forms_forloeb.task_console:
+  title: 'Opgaver'
+  menu_name: admin
+  parent: system.admin
+  route_name: maestro_taskconsole.taskconsole
+  weight: 10
+system.admin.os2forms_forloeb.task_console.outstanding_tasks:
+  title: 'Mine selvbetjeningsforløb'
+  menu_name: admin
+  parent: system.admin.os2forms_forloeb.task_console
+  route_name: view.maestro_outstanding_tasks.maestro_outstanding_tasks
+  weight: 1
+# Menu item provided by the view: view.forlob_og_webformularer_til_sagsbehandling.page_1
+#system.admin.os2forms_forloeb.task_console.new_task:
+#  title: 'Ny opgave'
+#  menu_name: admin
+#  parent: system.admin.os2forms_forloeb.task_console
+#  route_name: view.forlob_og_webformularer_til_sagsbehandling.page_1
+#  weight: 2
+system.admin.os2forms_forloeb.task_console.all_tasks:
+  title: 'Alle opgaver'
+  menu_name: admin
+  parent: system.admin.os2forms_forloeb.task_console
+  route_name: view.maestro_all_in_production_tasks.maestro_all_active_tasks_lean
+  weight: 3
+
+# Selvbetjeningsløsninger
+system.admin.os2forms_forloeb.content:
+  title: 'Selvbetjeningsløsninger'
+  menu_name: admin
+  parent: system.admin
+  route_name: system.admin_content
+  weight: 11
+system.admin.os2forms_forloeb.content.new_webform:
+  title: 'Tilføj formular'
+  menu_name: admin
+  parent: system.admin.os2forms_forloeb.content
+  route_name: entity.webform.add_form
+  weight: 1
+system.admin.os2forms_forloeb.content.new_flow:
+  title: 'Tilføj flow'
+  menu_name: admin
+  parent: system.admin.os2forms_forloeb.content
+  route_name: entity.maestro_template.add
+  weight: 2
+system.admin.os2forms_forloeb.content.new_webform_node:
+  title: 'Tilføj selvbetjeningsside'
+  menu_name: admin
+  parent: system.admin.os2forms_forloeb.content
+  route_name: node.add
+  route_parameters: { node_type: 'webform' }
+  weight: 3
+
+# Formularer
+system.admin.os2forms_forloeb.webforms:
+  title: 'Formularer'
+  menu_name: admin
+  parent: system.admin
+  route_name: entity.webform.collection
+  weight: 12
+system.admin.os2forms_forloeb.webforms.templates:
+  title: 'Skabeloner'
+  menu_name: admin
+  parent: system.admin.os2forms_forloeb.webforms
+  route_name: entity.webform.templates
+  weight: 1
+system.admin.os2forms_forloeb.webforms.new_webform:
+  title: 'Tilføj formular'
+  menu_name: admin
+  parent: system.admin.os2forms_forloeb.webforms
+  route_name: entity.webform.add_form
+  weight: 2
+
+# Flows
+system.admin.os2forms_forloeb.flows:
+  title: 'Flows'
+  menu_name: admin
+  parent: system.admin
+  route_name: entity.maestro_template.list
+  weight: 13
+system.admin.os2forms_forloeb.flows.add_flow:
+  title: 'Tilføj flow'
+  menu_name: admin
+  parent: system.admin.os2forms_forloeb.flows
+  route_name: entity.maestro_template.add
+  weight: 1
+
+# Fælles tekster
+# Menu item provided by the view: view.webformular_tekster.page_2
+#system.admin.os2forms_forloeb.webform_texts:
+#  title: 'Fælles tekster'
+#  menu_name: admin
+#  parent: system.admin
+#  route_name: view.webformular_tekster.page_2
+#  weight: 13
+# Menu item provided by the module: os2forms_webform_texts
+#system.admin.os2forms_forloeb.webform_texts.new_webform_text:
+#  title: 'Tilføj fælles tekst'
+#  menu_name: admin
+#  parent: system.admin.os2forms_forloeb.webform_texts
+#  route_name: node.add
+#  route_parameters: { node_type: 'os2forms_webform_text' }
+#  weight: 1
+
+# Import/eksport
+system.admin.os2forms_forloeb.config_import_export:
+  title: 'Import/eksport'
+  menu_name: admin
+  parent: system.admin
+  route_name: config.import_single
+  weight: 14
+
+# Oversættelser
+system.admin.os2forms_forloeb.translation:
+  title: 'Oversættelser'
+  menu_name: admin
+  parent: system.admin
+  route_name: locale.translate_page
+  weight: 15

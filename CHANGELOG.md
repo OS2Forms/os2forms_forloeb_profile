@@ -22,6 +22,14 @@ before starting to add changes.
 - Removed drupal/dynamic_entity_reference (It belongs in os2forms/os2forms_forloeb)
 - Changed composer patching configuration
 
+## [1.10.0]
+
+### Added 
+ - Feature/user permissions
+ - Feature/user management
+
+## [1.9.0]
+
 ### Added
 - Github CI action for checking Drupal Coding standards with PHP Code Sniffer
 
