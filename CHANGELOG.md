@@ -8,6 +8,8 @@ See ["how do I make a good changelog record?"](https://keepachangelog.com/en/1.0
 before starting to add changes.
 
 ## [Unreleased]
+
+## [1.11.0] - 10.03.2023
 - Added github action for checking changelog changes when creating pull requests
 - Updated readme
 - Removed webform_embed from repositories
