@@ -9,6 +9,10 @@ before starting to add changes.
 
 ## [Unreleased]
 
+### Removed
+ - modules/os2forms_permissions_by_term moved to os2forms/os2forms repo
+ - modules/os2forms_webform_list moved to os2forms/os2forms repo
+
 ## [1.11.0] - 10.03.2023
 - Added github action for checking changelog changes when creating pull requests
 - Updated readme
