@@ -5,6 +5,8 @@ system.admin.os2forms_forloeb.task_console:
   parent: system.admin
   route_name: maestro_taskconsole.taskconsole
   weight: 10
+  attributes:
+    class: 'toolbar-icon-content-tasks'
 system.admin.os2forms_forloeb.task_console.outstanding_tasks:
   title: 'Mine selvbetjeningsforløb'
   menu_name: admin
@@ -32,6 +34,8 @@ system.admin.os2forms_forloeb.content:
   parent: system.admin
   route_name: system.admin_content
   weight: 11
+  attributes:
+    class: 'toolbar-icon-content-self-service'
 system.admin.os2forms_forloeb.content.new_webform:
   title: 'Tilføj formular'
   menu_name: admin
@@ -59,6 +63,8 @@ system.admin.os2forms_forloeb.webforms:
   parent: system.admin
   route_name: entity.webform.collection
   weight: 12
+  attributes:
+    class: 'toolbar-icon-content-form'
 system.admin.os2forms_forloeb.webforms.templates:
   title: 'Skabeloner'
   menu_name: admin
@@ -79,6 +85,8 @@ system.admin.os2forms_forloeb.flows:
   parent: system.admin
   route_name: entity.maestro_template.list
   weight: 13
+  attributes:
+    class: 'toolbar-icon-content-flows'
 system.admin.os2forms_forloeb.flows.add_flow:
   title: 'Tilføj flow'
   menu_name: admin
@@ -110,6 +118,8 @@ system.admin.os2forms_forloeb.config_import_export:
   parent: system.admin
   route_name: config.import_single
   weight: 14
+  attributes:
+    class: 'toolbar-icon-content-import-export'
 
 # Oversættelser
 system.admin.os2forms_forloeb.translation:
@@ -118,3 +128,5 @@ system.admin.os2forms_forloeb.translation:
   parent: system.admin
   route_name: locale.translate_page
   weight: 15
+  attributes:
+    class: 'toolbar-icon-content-translations'
