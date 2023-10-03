@@ -10,6 +10,8 @@ before starting to add changes.
 ## [Unreleased]
 
 - webform_embded remove
+- Adding cache_control_override as a soft dependency (composer only)
+- Installing cache_control_override module on hook_install
 
 ## [1.13.0] - 25.09.2023
 
