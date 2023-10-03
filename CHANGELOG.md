@@ -9,6 +9,8 @@ before starting to add changes.
 
 ## [Unreleased]
 
+- webform_embded remove
+
 ## [1.13.0] - 25.09.2023
 
 - Fixed missing icons on administration menu
