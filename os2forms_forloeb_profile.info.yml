@@ -83,7 +83,6 @@ install:
   - webform_access
   - webform_attachment
   - webform_composite
-  - webform_embed
   - webform_entity_print
   - webform_entity_print_attachment
   - webform_migrate

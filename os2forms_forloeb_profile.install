@@ -41,6 +41,9 @@ function os2forms_forloeb_profile_install() {
     ->set('default', 'gin')
     ->set('admin', 'gin')
     ->save();
+
+  // Enable recommended (but optional) modules.
+  \Drupal::service('module_installer')->install(['cache_control_override']);
 }
 
 /**
