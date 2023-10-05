@@ -9,6 +9,10 @@ before starting to add changes.
 
 ## [Unreleased]
 
+## [1.14.1] - 04.10.2023
+
+- coc_forms_auto_export dependency
+
 ## [1.14.0] - 03.10.2023
 
 - webform_embded remove
