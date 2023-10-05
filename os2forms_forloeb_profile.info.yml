@@ -95,7 +95,6 @@ install:
 
 # OS2forms_forloeb
   - admin_toolbar_tools
-  - coc_forms_auto_export
   - events_logging
   - gin_toolbar
   - maestro
