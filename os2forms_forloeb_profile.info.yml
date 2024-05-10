@@ -1,7 +1,7 @@
 name: os2forms_forloeb_profile
 type: profile
 description: 'Installation profile for os2forms_forloeb'
-core_version_requirement: '^8.9 || ^9'
+core_version_requirement: '^8.9 || ^9 || ^10'
 langcode: da
 
 # Optional: Declare your installation profile as a distribution
