@@ -9,6 +9,8 @@ before starting to add changes.
 
 ## [Unreleased]
 
+- Removed `simplesamlphp`
+
 ## [1.14.1] - 04.10.2023
 
 - coc_forms_auto_export dependency
