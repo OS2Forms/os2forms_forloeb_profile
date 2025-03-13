@@ -9,6 +9,10 @@ before starting to add changes.
 
 ## [Unreleased]
 
+## [1.15.0] - 13.03.2025
+
+- Drupal 10 compatibility.
+
 ## [1.14.1] - 04.10.2023
 
 - coc_forms_auto_export dependency
@@ -77,3 +81,14 @@ before starting to add changes.
 - Security in case of vulnerabilities.
 
 ```
+
+
+[Unreleased]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.15.0...HEAD
+[1.15.0]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.14.1...1.15.0
+[1.14.1]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.14.0...1.14.1
+[1.14.0]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.13.0...1.14.0
+[1.13.0]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.12.0...1.13.0
+[1.12.0]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.11.0...1.12.0
+[1.11.0]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.10.0...1.11.0
+[1.10.0]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.9.0...1.10.0
+[1.9.0]: https://github.com/OS2Forms/os2forms_forloeb_profile/releases/tag/1.9.0
