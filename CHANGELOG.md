@@ -9,6 +9,8 @@ before starting to add changes.
 
 ## [Unreleased]
 
+- Adding OS2Forms 4 and 5 support.
+
 ## [1.15.0] - 13.03.2025
 
 - Drupal 10 compatibility.
