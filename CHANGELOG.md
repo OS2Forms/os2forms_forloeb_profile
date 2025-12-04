@@ -87,7 +87,8 @@ before starting to add changes.
 ```
 
 
-[Unreleased]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.15.0...HEAD
+[Unreleased]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.16.0...HEAD
+[1.16.0]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.15.0...1.16.0
 [1.15.0]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.14.1...1.15.0
 [1.14.1]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.14.0...1.14.1
 [1.14.0]: https://github.com/OS2Forms/os2forms_forloeb_profile/compare/1.13.0...1.14.0
