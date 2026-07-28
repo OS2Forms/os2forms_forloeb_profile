@@ -20,7 +20,7 @@
         "drupal/gin": "^3.0-rc",
         "drupal/core": "^9 || ^10",
         "drush/drush": "^11.4 || ^12",
-        "os2forms/os2forms": "^3.6 || ^4 || ^5",
+        "os2forms/os2forms": "^5 || dev-f/drupal/11",
         "os2web/os2web_simplesaml": "8.x-dev || master",
         "drupal/cache_control_override": "^1.1|^2.0"
     },
