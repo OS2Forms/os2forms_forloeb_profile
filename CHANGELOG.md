@@ -9,6 +9,8 @@ before starting to add changes.
 
 ## [Unreleased]
 
+## [2.0.0] - 01.10.2026
+
 - Drupal 11 compatibility.
 
 ## [1.16.0] - 27.10.2025
