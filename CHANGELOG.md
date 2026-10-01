@@ -9,6 +9,8 @@ before starting to add changes.
 
 ## [Unreleased]
 
+- Drupal 11 compatibility.
+
 ## [1.16.0] - 27.10.2025
 
 - Adding OS2Forms 4 and 5 support.
