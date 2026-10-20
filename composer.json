@@ -17,7 +17,7 @@
     ],
     "require": {
         "cweagans/composer-patches": "^1.6.5",
-        "drupal/gin": "^3.0-rc",
+        "drupal/gin": "^4.0 || ^5.0",
         "drupal/core": "^9 || ^10 || ^11",
         "drush/drush": "^11.4 || ^12 || ^13",
         "os2forms/os2forms": "^5 || ^6 || dev-develop",
