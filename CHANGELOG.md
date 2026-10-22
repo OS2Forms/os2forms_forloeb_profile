@@ -9,6 +9,8 @@ before starting to add changes.
 
 ## [Unreleased]
 
+## [2.1.0] - 22.10.2026
+
 - Upgrading Gin theme versions
 
 ## [2.0.0] - 01.10.2026
